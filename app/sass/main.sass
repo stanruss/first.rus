@@ -1,0 +1,105 @@
+@import "../libs/bootstrap/scss/my-variables"
+@import "../libs/bootstrap/scss/bootstrap"
+@import "_mixins/mixins"
+@import "../css/icon-font.min.css"
+@import "vars"
+@import "fonts"
+
+html, body
+	height: 100%
+
+	body
+		font-size: 16px
+		min-width: 320px
+		position: relative
+		line-height: 1.65
+		font-family: $default-font
+		overflow-x: hidden
+		input, textarea
+			outline: none
+			&:focus:required:invalid
+				border-color: red
+				&:required:valid
+					border-color: green
+
+.clearfix
+	display: block
+	clear: both
+	content: ""
+.main
+	&-header
+		background-color: #ddd
+		height: 80px
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-menu
+		display: inline-flex
+		margin-bottom: 0
+		list-style: none
+		li
+			padding: 0 20px
+		a
+			color: #222
+	&-logo
+		margin: 0 20px
+	&-search
+		position: relative
+		flex: 1
+		margin-right: 20px
+		input
+			border-radius: 30px
+			font-size: 13px
+			height: 40px
+			padding: 0 40px 0 20px
+			width: 100%
+			&:focus
+				&::-webkit-input-placeholder
+					color: #fff
+	&-menu-link
+		line-height: 80px
+	&-dropdown-menu
+		padding-left: 0
+		list-style: none
+		li
+			padding: 0
+
+.search-button
+	position: absolute
+	top: 6px
+	right: 8px
+	border-radius: 15px
+	font-size: 15px
+	border: 1px solid #666
+	cursor: pointer
+.main-menu-item
+	position: relative
+	&:hover
+		.dropdown-content
+			display: block
+			left: -10px
+		.dropdown-menu-link
+			color: #ddd
+			padding: 15px 30px
+			display: block
+			+border (1px,#fff,top-bottom)
+			&:hover
+				color: #fff
+			
+.dropdown-content
+	position: absolute
+	background-color: #222
+	width: 240px
+	display: none
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		bottom: 100%
+		width: 14px
+		height: 7px
+		margin-left: 40px
+		+css-triangle(#222, up)
+
+
+@import "media" // Always at the end
