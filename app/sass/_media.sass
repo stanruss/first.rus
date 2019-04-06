@@ -5,7 +5,28 @@
 
 +media-breakpoint-down(xl)
 +media-breakpoint-down(lg)
+	
 +media-breakpoint-down(md)
+	.dropdown-menu
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 4px
+			height: 4px
+			+css-triangle(#fff, up)
+			top: 52px
+			left: 87px
+			z-index: 1
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			width: 5px
+			height: 5px		
+			+css-triangle(rgba(0,0,0,.15), up)
+			top: 51px
+			left: 87px
 +media-breakpoint-down(sm)
 +media-breakpoint-down(xs)
 

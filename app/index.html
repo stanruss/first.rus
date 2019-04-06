@@ -27,87 +27,49 @@
 </head>
 
 <body>
-	<header class="main-header">
-		<div class="main-logo">Logo</div>
-		<ul class="main-menu">
-			<li class="main-menu-item">
-				<a href="#" class="main-menu-link">link1</a>
-				<div class="dropdown-content">
-					<ul class="main-dropdown-menu">
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link1</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link2</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link3</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link4</a>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li class="main-menu-item">
-				<a href="#" class="main-menu-link">link2</a>
-				
-				<div class="dropdown-content">
-					<ul class="main-dropdown-menu">
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link1</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link2</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link3</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link4</a>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li class="main-menu-item">
-				<a href="#" class="main-menu-link">link3</a>
-				
-				<div class="dropdown-content">
-					<ul class="main-dropdown-menu">
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link1</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link2</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link3</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link4</a>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li class="main-menu-item">
-				<a href="#" class="main-menu-link">link4</a>
-				
-				<div class="dropdown-content">
-					<ul class="main-dropdown-menu">
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link1</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link2</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link3</a>
-						</li>
-						<li class="dropdown-menu-item"><a href="#" class="dropdown-menu-link">link4</a>
-						</li>
-					</ul>
-				</div>
-			</li>
-			<li class="main-menu-item">
-				<a href="#" class="main-menu-link">link5</a>
-			</li>
-			<li class="main-menu-item">
-				<a href="#" class="main-menu-link">link6</a>
-			</li>
-		</ul>
-		<form action="#" class="main-search">
-			<input type="text" class="form-control search-input" placeholder="Search">
-			<button class="search-button"><i class="fas fa-search"></i></button>
-		</form>
-		<div class="main-location"><a href="#" class="location-link"></a></div>
-	</header>
+	<nav class="navbar fixed-top navbar-expand-lg py-3 navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="https://bootstrap-4.ru/docs/4.3.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top mr-3" alt="">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 ml-3 mr-2 my-lg-0 nav-search">
+      <input class="form-control mr-sm-2 nav-search" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  <button type="button" class="btn btn-primary">
+  В корзине <span class="badge badge-light">559 &nbsp; товаров</span>
+  <span class="sr-only">непрочитанных сообщений</span>
+</button>
+</nav>
 
+<section class="first-sect">1</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="/js/scripts.min.js"></script>
 </body>
 </html>

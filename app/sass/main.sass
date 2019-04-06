@@ -26,80 +26,35 @@ html, body
 	display: block
 	clear: both
 	content: ""
-.main
-	&-header
-		background-color: #ddd
-		height: 80px
-		display: flex
-		align-items: center
-		justify-content: space-between
-	&-menu
-		display: inline-flex
-		margin-bottom: 0
-		list-style: none
-		li
-			padding: 0 20px
-		a
-			color: #222
-	&-logo
-		margin: 0 20px
-	&-search
-		position: relative
-		flex: 1
-		margin-right: 20px
-		input
-			border-radius: 30px
-			font-size: 13px
-			height: 40px
-			padding: 0 40px 0 20px
-			width: 100%
-			&:focus
-				&::-webkit-input-placeholder
-					color: #fff
-	&-menu-link
-		line-height: 80px
-	&-dropdown-menu
-		padding-left: 0
-		list-style: none
-		li
-			padding: 0
 
-.search-button
-	position: absolute
-	top: 6px
-	right: 8px
-	border-radius: 15px
-	font-size: 15px
-	border: 1px solid #666
-	cursor: pointer
-.main-menu-item
-	position: relative
-	&:hover
-		.dropdown-content
-			display: block
-			left: -10px
-		.dropdown-menu-link
-			color: #ddd
-			padding: 15px 30px
-			display: block
-			+border (1px,#fff,top-bottom)
-			&:hover
-				color: #fff
-			
-.dropdown-content
-	position: absolute
-	background-color: #222
-	width: 240px
-	display: none
+.navbar
+	+border(1px,rgba(0,0,0,.15),bottom)
+.dropdown-menu
+	margin-top: 15px
 	&::before
 		content: ''
 		display: block
 		position: absolute
-		bottom: 100%
-		width: 14px
-		height: 7px
-		margin-left: 40px
-		+css-triangle(#222, up)
-
+		width: 4px
+		height: 4px
+		+css-triangle(#fff, up)
+		top: -6px
+		left: 93px
+		z-index: 1
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		width: 5px
+		height: 5px		
+		+css-triangle(rgba(0,0,0,.15), up)
+		top: -7px
+		left: 93px
+.nav-search
+	flex: 1
+section
+	height: 1600px
+.first-sect
+	padding-top: 80px
 
 @import "media" // Always at the end
