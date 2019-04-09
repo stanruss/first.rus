@@ -26,6 +26,9 @@ html, body
 	display: block
 	clear: both
 	content: ""
+.badge
+	margin-left: 9px
+	padding: 5px 8px
 
 .navbar
 	+border(1px,rgba(0,0,0,.15),bottom)
@@ -50,8 +53,31 @@ html, body
 		+css-triangle(rgba(0,0,0,.15), up)
 		top: -7px
 		left: 93px
+.drop-menu-right
+	margin-top: 17px
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus
+	box-shadow: none
+.btn-primary.focus, .btn-primary:focus
+	box-shadow: none
 .nav-search
 	flex: 1
+	position: relative
+	button
+		position: absolute
+		right: 8px
+		border-radius: .25rem
+	input 
+		outline: none
+		&:focus
+			box-shadow: none
+			&::-webkit-input-placeholder
+				color: transparent
+			&:-moz-placeholder 
+				color: transparent
+			&::-moz-placeholder 
+				color: transparent
+			&:-ms-input-placeholder 
+				color: transparent
 section
 	height: 1600px
 .first-sect
