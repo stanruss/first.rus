@@ -15,6 +15,7 @@ html, body
 		line-height: 1.65
 		font-family: $default-font
 		overflow-x: hidden
+		color: $font-color-dark
 		input, textarea
 			outline: none
 			&:focus:required:invalid
@@ -33,7 +34,7 @@ html, body
 .navbar
 	+border(1px,rgba(0,0,0,.15),bottom)
 .dropdown-menu
-	margin-top: 15px
+	margin-top: 8px
 	&::before
 		content: ''
 		display: block
@@ -54,11 +55,17 @@ html, body
 		top: -7px
 		left: 93px
 .drop-menu-right
-	margin-top: 17px
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus
+	margin-top: 8px
+	color: $font-color-dark
+.btn-light:not(:disabled):not(.disabled).active:focus, .btn-light:not(:disabled):not(.disabled):active:focus, .show>.btn-light.dropdown-toggle:focus
 	box-shadow: none
-.btn-primary.focus, .btn-primary:focus
+.btn-light.focus, .btn-light:focus
 	box-shadow: none
+.btn-light
+	color: $font-color-dark	
+	+border-radius(0, right-bottom)
+	+border-radius(0, right-top)
+
 .nav-search
 	flex: 1
 	position: relative
@@ -68,6 +75,7 @@ html, body
 		border-radius: .25rem
 	input 
 		outline: none
+		color: $font-color-dark
 		&:focus
 			box-shadow: none
 			&::-webkit-input-placeholder
@@ -78,9 +86,23 @@ html, body
 				color: transparent
 			&:-ms-input-placeholder 
 				color: transparent
-section
-	height: 1600px
-.first-sect
-	padding-top: 80px
+
+.nav-top .navbar-brand
+	font-size: 15px
+	align-items: center
+	display: flex
+	font-weight: bold
+	color: $accent-color
+	text-transform: uppercase
+	// transform: matrix( 0.8,0,0,0.9,0,0)
+	// -moz-transform: matrix( 0.8,0,0,0.9,0,0)
+	// -webkit-transform: matrix( 0.8,0,0,0.9,0,0)
+	// -ms-transform: matrix( 0.8,0,0,0.9,0,0)
+	
+	
+	
+	
+	
+
 
 @import "media" // Always at the end
