@@ -26,79 +26,80 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
-<body>
-  <nav class="nav-top navbar-light bg-light py-2 align-items-center d-flex clearfix"><a class="navbar-brand float-left ml-4" href="#"><!-- <img src="https://bootstrap-4.ru/docs/4.3.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top mr-3" alt=""> -->Navbar</a>
-  <form class="form-inline  ml-3 mr-2 my-lg-0 nav-search float-right">
-      <input class="form-control mr-sm-2 nav-search" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-danger  my-sm-0" type="submit">Search</button>
-    </form>
-    <div class="dropdown  float-right">
-  <button type="button" class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-  В корзине <img class="ml-1" src="img/bag.png" alt="bag"><span class="badge badge-light">0 &nbsp; товаров</span>
-  <span class="sr-only">непрочитанных сообщений</span>
-</button>
-<div class="dropdown-menu drop-menu-right dropdown-menu-right">
-  <form class="px-4 py-3">
-    <div class="form-group">
-      <label for="exampleDropdownFormEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-    </div>
-    <div class="form-group">
-      <label for="exampleDropdownFormPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-    </div>
-    <div class="form-group">
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="dropdownCheck">
-        <label class="form-check-label" for="dropdownCheck">
-          Remember me
-        </label>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Sign in</button>
-  </form>
-  <div class="dropdown-divider"></div>
-  <a class="dropdown-item" href="#">New around here? Sign up</a>
-  <a class="dropdown-item" href="#">Forgot password?</a>
-</div>
-</div>
-  </nav>
-	<nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
-  
+<body class="bg-light">
+	<div class="container">
+		<nav class="nav-top navbar-light bg-light py-2 align-items-center d-flex clearfix"><a class="navbar-brand float-left ml-4" href="#"><!-- <img src="https://bootstrap-4.ru/docs/4.3.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top mr-3" alt=""> -->Navbar</a>
+			<form class="form-inline  ml-3 mr-2 my-lg-0 py-2 py-md-0 nav-search float-right">
+				<input class="form-control mr-sm-2 nav-search" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-danger  my-sm-0" type="submit">Search</button>
+			</form>
+			<div class="dropdown  float-right">
+				<button type="button" class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					В корзине <img class="ml-1" src="img/bag.png" alt="bag"><span class="badge badge-light">0 &nbsp; товаров</span>
+					<span class="sr-only">непрочитанных сообщений</span>
+				</button>
+				<div class="dropdown-menu drop-menu-right dropdown-menu-right">
+					<form class="px-4 py-3">
+						<div class="form-group">
+							<label for="exampleDropdownFormEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+						</div>
+						<div class="form-group">
+							<label for="exampleDropdownFormPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="dropdownCheck">
+								<label class="form-check-label" for="dropdownCheck">
+									Remember me
+								</label>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">Sign in</button>
+					</form>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">New around here? Sign up</a>
+					<a class="dropdown-item" href="#">Forgot password?</a>
+				</div>
+			</div>
+		</nav></div>
+		<nav class="navbar navbar-expand-md  navbar-light bg-light border-top">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    
-  </div>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-</nav>
 
-<section class="first-sect py-4">1</section>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="/js/scripts.min.js"></script>
-</body>
-</html>
+			</div>
+			<button class="navbar-toggler bg-dark navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		</nav>
+
+		<section class="first-sect py-4"><div class="container">1</div></section>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="/js/scripts.min.js"></script>
+	</body>
+	</html>
