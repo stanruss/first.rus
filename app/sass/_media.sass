@@ -14,7 +14,7 @@
 			position: absolute
 			width: 4px
 			height: 4px
-			+css-triangle(#fff, up)
+			+css-triangle($white-color, up)
 			top: 52px
 			left: 87px
 			z-index: 1
@@ -32,6 +32,17 @@
 		flex-direction: column
 		.nav-search			
 			width: 100%
+	.nav-top.fixed-top
+		.nav-search
+			display: none
+		.navbar-brand
+			border-bottom: $light-color solid 1px
+			width: 100%
+			justify-content: center
+			text-align: center
+			padding-bottom: 12px
+		.dropdown
+			padding-top: 6px
 +media-breakpoint-down(xs)
 	.nav-search
 		button
